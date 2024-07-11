@@ -9,7 +9,6 @@ def home():
     return f'Hello, World! Version: {version}'
 
 if __name__ == '__main__':
-    # Get the port from the environment variable 'PORT' or use 5000 as default
     port = int(os.environ.get('PORT', 5000))
-    # Run the app on all available interfaces (0.0.0.0)
+    print(f"Starting app on port {port}")
     app.run(host='0.0.0.0', port=port)
