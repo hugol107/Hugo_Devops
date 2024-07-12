@@ -1,0 +1,4 @@
+cd /mnt/c/Users/Hugo\ Patino/flask-app
+echo "build:
+  docker:
+    web: Dockerfile" > heroku.yml
