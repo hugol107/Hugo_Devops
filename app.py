@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     version = os.getenv('APP_VERSION', '1.0')
-    return f'Hello, visitor! How are you? I hope you are great... You are using version: {version}'
+    return f'Hello, visitor, welcome to Hugos app! How are you? I hope you are great... You are using version: {version}'
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
